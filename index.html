@@ -34,8 +34,7 @@
     body.dark-mode .dots button{background:#666}
     body.dark-mode .dots button.active{background:#4c9aff}
 
-    .caption{position:absolute;bottom:55px;left:50%;transform:translateX(-50%);font-size:1.1rem;
-             background:rgba(0,0,0,.55);color:#fff;padding:6px 14px;border-radius:4px;display:none}
+   
     body.dark-mode .caption{background:rgba(255,255,255,.12)}
 
     /* service cards */
@@ -176,9 +175,7 @@ Thank you for considering us as your trusted partner. Let's embark on this journ
         idx=n;
         imgs[idx].classList.add('active');
         dotsBox.children[idx].classList.add('active');
-        caption.textContent=captions[idx];
-        caption.style.display=captions[idx]? 'block':'none';
-        if(manual){reset();}
+                if(manual){reset();}
       }
       function next(){show((idx+1)%imgs.length);} 
       function reset(){clearInterval(timer);timer=setInterval(next,6000);} 
