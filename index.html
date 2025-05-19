@@ -24,8 +24,8 @@
     header{padding:0;margin:0}
 
     header.slideshow{position:relative;max-width:50%;overflow:hidden}
-    .slides img{width:40%;display:none;object-fit:cover;min-height:340px}
-    .slides img.active{display:block;animation:fade 0.2s ease}
+    .slides img{width:40%;display:none;object-fit:fill;min-height:340px}
+    .slides img.active{display:block;animation:spin 0.2s ease}
     @keyframes fade{from{opacity:0}to{opacity:1}}
 
     .dots{position:absolute;bottom:12px;left:50%;display:flex;gap:8px;transform:translateX(-50%)}
